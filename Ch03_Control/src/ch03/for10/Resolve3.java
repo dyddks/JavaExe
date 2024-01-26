@@ -17,7 +17,7 @@ public class Resolve3 {
 		System.out.println("세번째 값을 입력하세요");
 		c = sc.nextInt();
 		
-		tri = a+b>c || a+c>b || b+c>a ? true: false;
+		tri = a+b>=c && a+c>=b && b+c>=a ? true: false;
 		System.out.println("삼각형 생성 가능성: " + tri);
 	}
 
