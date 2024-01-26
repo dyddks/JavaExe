@@ -11,17 +11,17 @@ public class Resolve2 {
 		System.out.println("369게임");
 		System.out.print("숫자를 입력하세요 >>");
 		int num = sc.nextInt();
-		int clab = 0;
+		int clap= 0;
 		if(num/10 == 3 || num/10 == 6 ||num/10 == 9) {
-			clab+=1;
+			clap+=1;
 		}
 		if(num%10 == 3 || num%10 == 6 ||num%10 == 9) {
-			clab+=1;
+			clap+=1;
 		}
 		
-		if(clab == 1) {
+		if(clap == 1) {
 			System.out.println("박수짝");
-		}else if(clab == 2){
+		}else if(clap == 2){
 			System.out.println("박수짝짝");
 		}
 	}
