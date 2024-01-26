@@ -18,7 +18,7 @@ public class ArrayEx {
 		for(int i=0; i<kor.length; i++) {
 			total += kor[i];
 		}
-		double avg = (double)(total/3);
+		double avg = (double)(total/kor.length);
 		
 		System.out.println("총점: " + total);
 		System.out.println("평균: " + avg);
