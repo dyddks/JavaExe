@@ -1,6 +1,5 @@
 package ch05.array08;
 
-import java.util.Arrays;
 import java.util.Scanner;
 
 public class Resolve2 {
