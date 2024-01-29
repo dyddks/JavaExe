@@ -18,10 +18,10 @@ public class Resolve3 {
 			
 			if(num.equals("1")) {
 				System.out.print("예금액> ");
-				saving = sc.nextInt();
+				saving = Integer.parseInt(sc.nextLine());
 			}else if(num.equals("2")) {
 				System.out.print("출금액> ");
-				int withdraw = sc.nextInt();
+				int withdraw = Integer.parseInt(sc.nextLine());
 				saving -= withdraw;
 			}else if(num.equals("3")) {
 				System.out.println("잔고> " + saving);
