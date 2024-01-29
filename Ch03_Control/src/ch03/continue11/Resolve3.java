@@ -18,7 +18,7 @@ public class Resolve3 {
 			
 			if(num.equals("1")) {
 				System.out.print("예금액> ");
-				saving = Integer.parseInt(sc.nextLine());
+				saving += Integer.parseInt(sc.nextLine());
 			}else if(num.equals("2")) {
 				System.out.print("출금액> ");
 				int withdraw = Integer.parseInt(sc.nextLine());
