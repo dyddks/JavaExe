@@ -20,8 +20,8 @@ public class Resolve3 {
 		}
 		
 		System.out.print("총점 >> " + sum);
-		double avg = sum/grade.length;
-		System.out.print("평균 >> " + avg);
+		double avg = (double)sum/grade.length;
+		System.out.printf("평균 >> %.2f", avg);
 	}
 
 }
