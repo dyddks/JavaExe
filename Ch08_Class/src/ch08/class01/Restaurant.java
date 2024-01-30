@@ -13,7 +13,7 @@ import java.util.Scanner;
  * 동사들의 집합(Controller, Business Layer)
  * 필드들의 집합(Vo, Dao)
  * */
-public class Restaurnt {
+public class Restaurant {
 	//필드
 	private String[] foods = {"냉면", "떡볶이", "쌀국수", "칼국수", "순대", "튀김", "라면"};
 	private int selectNum;
