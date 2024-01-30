@@ -6,6 +6,10 @@ package ch08.class06;
  * 
  * 그래서 클래스 내부에서만 사용한다는 개념(private)과
  * 밖에서도 접근한다는 개념(public)이 등장하게 되었다.
+ * 
+ * [객체지향의 기본 원칙]
+ * 필드 변수 : private를 기본으로 한다. (외부 직접 접근을 불허)
+ * 메소드 : public를 기본으로 한다. (외부 사용을 전제)
  * */
 public class Human {
 	private String name;
