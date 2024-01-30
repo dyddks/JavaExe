@@ -16,6 +16,10 @@ public class HumanMain {
 		human.score = 4.5;
 		
 		view(human);
+		
+		/* 중간에 많은 처리가 있다.
+		 * 그러다 age나 score값에 음수가 들어갔다.
+		 **/
 	}
 
 }
