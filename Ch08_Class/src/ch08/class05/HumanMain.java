@@ -20,6 +20,8 @@ public class HumanMain {
 		/* 중간에 많은 처리가 있다.
 		 * 그러다 age나 score값에 음수가 들어갔다.
 		 **/
+		human.age = -10;
+		human.score = -20.9;
 	}
 
 }
