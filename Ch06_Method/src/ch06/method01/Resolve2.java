@@ -17,6 +17,8 @@ public class Resolve2 {
 		Scanner sc = new Scanner(System.in);
 		int num0 = sc.nextInt();
 		int num1 = sc.nextInt();
+		sc.close();
+		
 		abs(num0, num1);
 	}
 
