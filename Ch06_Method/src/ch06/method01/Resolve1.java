@@ -23,7 +23,7 @@ public class Resolve1 {
 		
 		num[0] = sc.nextInt();
 		num[1] = sc.nextInt();
-		
+		sc.close();
 		return num;
 	}
 	
