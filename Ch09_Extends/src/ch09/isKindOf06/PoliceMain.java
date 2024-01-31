@@ -1,4 +1,4 @@
-package ch09.extends06;
+package ch09.isKindOf06;
 
 /* 상속을 할 때 고려해야 할 것
  * 1) 부모로 정할 클래스와 자식 클래스간에 자연스러운 종속 관계인지

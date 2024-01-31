@@ -1,4 +1,4 @@
-package ch09.extends06;
+package ch09.isKindOf06;
 
 public class Police extends Gun{
 	private int handCuffs;

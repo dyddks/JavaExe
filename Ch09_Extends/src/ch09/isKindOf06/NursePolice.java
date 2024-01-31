@@ -1,4 +1,4 @@
-package ch09.extends06;
+package ch09.isKindOf06;
 
 public class NursePolice extends Police{
 	private int thermometer;	//체온계 개수
