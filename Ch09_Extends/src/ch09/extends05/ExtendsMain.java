@@ -15,7 +15,7 @@ public class ExtendsMain {
 		child.wealth();
 		child.play();
 		
-		
+		// private이라 자식클래스라도 접근못함
 //		System.out.println("잘생김점수: " + child.handsomeScore);
 //		System.out.println("재산: " + child.money);
 //		System.out.println("노는날: " + child.day);
