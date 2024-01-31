@@ -24,16 +24,16 @@ public class FruitMain {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-		FruitSeller fs = new FruitSeller(20);
-		FruitBuyer fb = new FruitBuyer(10000);
+		FruitSeller seller = new FruitSeller(20);
+		FruitBuyer buyer = new FruitBuyer(10000);
 		
-		fs.showSaleResult();
-		fb.showBuyResult();
+		seller.showSaleResult();
+		buyer.showBuyResult();
 		
-		fb.buyApple(fs, 2000);
+		buyer.buyApple(seller, 2000);
 		
-		fs.showSaleResult();
-		fb.showBuyResult();
+		seller.showSaleResult();
+		buyer.showBuyResult();
 	}
 
 }
