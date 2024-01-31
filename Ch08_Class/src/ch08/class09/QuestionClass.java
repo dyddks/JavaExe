@@ -138,7 +138,19 @@ public static void answer4(Scanner sc) {
 
 // 5번 문제에 대한 풀이
 public static void answer5(Scanner sc) {
-
+	Rectangle r = new Rectangle();
+	r.set(0, 0, 2, 2);
+	r.square();
+	r.show();
+	Rectangle r1 = new Rectangle();
+	r1.set(0, 2, 2, 0);
+	r1.square();
+	r1.show();
+	if(r1.equals(r)) {
+		System.out.println("두사각형은 같습니다.");
+	}else {
+		System.out.println("두사각형은 다릅니다.");
+	}	
 }
 
 // 전체의 시작인 main 메서드
