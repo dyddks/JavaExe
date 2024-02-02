@@ -22,6 +22,6 @@ public class RegularEmployee extends Employee{
 		//부모의 기능 + 추가 확장
 		super.showEmployeeInfo(); // Employee의 show 호출
 		System.out.println("bonus: " + bonus);
-		System.out.println("monthPay: " + getMonthPay());
+		System.out.printf("monthPay: %.2f\n", getMonthPay());
 	}
 }
