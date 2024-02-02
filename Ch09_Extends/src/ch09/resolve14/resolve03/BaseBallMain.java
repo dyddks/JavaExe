@@ -13,7 +13,6 @@ public class BaseBallMain {
 		boolean isRun = true;
 		g.setAnswer();
 		while(isRun) {
-			System.out.println(Arrays.toString(g.getAnswer()));
 			b.setAnswer();
 			d.result(b.getAnswer(), g.getAnswer());
 			if(b.viewResult(d.getResult()) == 3) {
