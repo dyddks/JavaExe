@@ -14,21 +14,21 @@ public class FordCar implements ICar {
 	public void turnOff() throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.out.println("Ford 시동이 부드럽게 잘 Off.T");
-		Thread.sleep((long)Math.random()*100);
+		Thread.sleep((long)(Math.random()*500)+500);
 	}
 
 	@Override
 	public void accel() throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.out.println("Ford 엑셀이 터보로 동작된다.H");
-		Thread.sleep((long)Math.random()*100);
+		Thread.sleep((long)(Math.random()*500)+500);
 	}
 
 	@Override
 	public void footBreak() throws InterruptedException {
 		// TODO Auto-generated method stub
 		System.out.println("Ford 브레이크가 부드럽ㄱ-ㅔ 동작된다.T");
-		Thread.sleep((long)Math.random()*100);
+		Thread.sleep((long)(Math.random()*500)+500);
 	}
 
 }
