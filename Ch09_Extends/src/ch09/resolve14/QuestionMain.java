@@ -25,7 +25,7 @@ public class QuestionMain {
 			qm.printQuestion();
 			int sel = qm.getSelectQuestion(sc);
 			
-			if(sel>=0 && sel< qm.qaArr.length) {					
+			if(sel>=1 && sel<=qm.qaArr.length) {					
 				IQuestionAnswer iqa = qm.qaArr[sel-1];
 				iqa.answer(sc);
 			}else {
