@@ -9,9 +9,14 @@ public class GeneratorThreeNum {
 		int i = 1;
 		while(true) {
 			cor_answer[i] = (int)(Math.random()*10);
-			if(cor_answer[i] != cor_answer[i-1]) {
-				i++;
+			
+			for(int j=0; j<i; j++) {
+				if(cor_answer[i] == cor_answer[j]) {
+					i--;
+					break;
+				}
 			}
+			i++;
 			if(i == 3) {
 				break;
 			}
