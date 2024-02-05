@@ -20,7 +20,7 @@ public class QuestionMain {
 			qaArr[i].question();
 		}
 	}
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		Scanner sc = new Scanner(System.in);
 		QuestionMain qm = new QuestionMain();
 		boolean isRun = true;
