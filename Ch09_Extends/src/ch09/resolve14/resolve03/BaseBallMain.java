@@ -1,7 +1,5 @@
 package ch09.resolve14.resolve03;
 
-import java.util.Arrays;
-
 public class BaseBallMain {
 	
 	public static void main(String[] args) {
