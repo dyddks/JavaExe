@@ -30,6 +30,22 @@ public class Answer3 implements IQuestionAnswer {
 	public void answer(Scanner sc) {
 		sc.nextLine();
 		System.out.println("3번 문제 실행");
+		
+		GeneratorThreeNum g = new GeneratorThreeNum();
+		BaseBallMenu b = new BaseBallMenu();
+		DecisionBall d = new DecisionBall();
+		
+		boolean isRun = true;
+		g.setAnswer();
+		while(isRun) {
+			b.setAnswer();
+			d.result(b.getAnswer(), g.getAnswer());
+			if(b.viewResult(d.getResult()) == 3) {
+				isRun = b.restart();
+				g.setAnswer();
+			}
+		}
+		System.out.println("게임이 종료되었습니다.");
 
 	}
 
