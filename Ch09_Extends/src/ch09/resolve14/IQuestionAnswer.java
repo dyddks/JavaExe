@@ -4,6 +4,6 @@ import java.util.Scanner;
 
 public interface IQuestionAnswer {
 	public void question();
-	public void answer(Scanner sc);
+	public void answer(Scanner sc) throws InterruptedException;
 	public boolean isRun();
 }
