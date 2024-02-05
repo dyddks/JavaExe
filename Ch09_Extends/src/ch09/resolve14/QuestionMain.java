@@ -3,7 +3,7 @@ package ch09.resolve14;
 import java.util.Scanner;
 
 public class QuestionMain {
-	IQuestionAnswer[] qaArr = { new Answer1(), new Answer2(), new Answer3()};
+	IQuestionAnswer[] qaArr = { new Answer1(), new Answer2(), new Answer3(), new Exit()};
 	
 	public int getSelectQuestion(Scanner sc) {
 		System.out.print("\n\n메뉴 번호 선택 >> ");
@@ -28,6 +28,7 @@ public class QuestionMain {
 			if(sel>=1 && sel<=qm.qaArr.length) {					
 				IQuestionAnswer iqa = qm.qaArr[sel-1];
 				iqa.answer(sc);
+				isRun = iqa.isRun();
 			}else {
 				System.out.println("잘못된 입력입니다.");
 			}
