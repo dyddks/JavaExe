@@ -5,4 +5,5 @@ import java.util.Scanner;
 public interface IQuestionAnswer {
 	public void question();
 	public void answer(Scanner sc);
+	public boolean isRun();
 }
