@@ -1,4 +1,4 @@
-package ch09.resolve14;
+package ch09.resolve14.question1;
 
 public class LaserPrinter extends PrinterInfo{
 	private int tonerCnt;

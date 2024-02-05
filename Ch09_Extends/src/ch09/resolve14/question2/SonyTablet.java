@@ -1,4 +1,4 @@
-package ch09.resolve14;
+package ch09.resolve14.question2;
 
 public class SonyTablet implements ITablet {
 

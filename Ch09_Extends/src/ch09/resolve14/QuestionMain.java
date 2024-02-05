@@ -2,6 +2,10 @@ package ch09.resolve14;
 
 import java.util.Scanner;
 
+import ch09.resolve14.question1.Answer1;
+import ch09.resolve14.question2.Answer2;
+import ch09.resolve14.question3.Answer3;
+
 public class QuestionMain {
 	IQuestionAnswer[] qaArr = { new Answer1(), new Answer2(), new Answer3(), new Exit()};
 	

@@ -1,6 +1,8 @@
-package ch09.resolve14;
+package ch09.resolve14.question1;
 
 import java.util.Scanner;
+
+import ch09.resolve14.IQuestionAnswer;
 
 public class Answer1 implements IQuestionAnswer {
 
@@ -32,6 +34,12 @@ public class Answer1 implements IQuestionAnswer {
 		sc.nextLine();
 		System.out.println("1번 문제 실행");
 
+	}
+
+	@Override
+	public boolean isRun() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 
 }

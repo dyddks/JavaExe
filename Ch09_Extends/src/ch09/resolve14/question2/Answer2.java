@@ -1,6 +1,8 @@
-package ch09.resolve14;
+package ch09.resolve14.question2;
 
 import java.util.Scanner;
+
+import ch09.resolve14.IQuestionAnswer;
 
 public class Answer2 implements IQuestionAnswer{
 
@@ -25,6 +27,12 @@ public class Answer2 implements IQuestionAnswer{
 		sc.nextLine();
 		System.out.println("2번 문제 실행");
 		
+	}
+
+	@Override
+	public boolean isRun() {
+		// TODO Auto-generated method stub
+		return true;
 	}
 
 }

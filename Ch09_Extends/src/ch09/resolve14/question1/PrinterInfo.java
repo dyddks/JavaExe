@@ -1,4 +1,4 @@
-package ch09.resolve14;
+package ch09.resolve14.question1;
 
 public abstract class PrinterInfo {
 	private String model;

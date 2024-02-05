@@ -1,4 +1,4 @@
-package ch09.resolve14;
+package ch09.resolve14.question3;
 
 public class DecisionBall {
 	int[] result = new int[2];
