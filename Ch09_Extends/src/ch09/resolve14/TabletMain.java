@@ -1,4 +1,4 @@
-package ch09.resolve14.resolve02;
+package ch09.resolve14;
 
 public class TabletMain {
 
