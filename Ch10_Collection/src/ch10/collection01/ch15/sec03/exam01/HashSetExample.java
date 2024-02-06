@@ -25,6 +25,10 @@ public class HashSetExample {
 		
 		int size = set.size();
 		System.out.println("총 객체 수: " + size);
+		
+		for(String element: set) {
+			System.out.println(element);
+		}
 	}
 
 }
