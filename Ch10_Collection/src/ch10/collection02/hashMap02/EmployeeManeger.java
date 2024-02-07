@@ -8,11 +8,8 @@ import java.util.Scanner;
 import java.util.Set;
 
 public class EmployeeManeger {
-	private final int EMP_NUM = 100;
 	// Employee의 자식 객체들을 저장
 	private Map<String, Employee> empMap = new HashMap<>();
-	private Employee[] empArr = new Employee[EMP_NUM];
-	private int numOfEmp = 0;
 	private Scanner sc = new Scanner(System.in);
 	
 	private int viewMenu() {
