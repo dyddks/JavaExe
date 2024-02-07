@@ -1,7 +1,10 @@
 package ch11.string02.ch12.sec05;
 
-public class StringBuilderExample {
+import java.util.ArrayList;
+import java.util.List;
 
+public class StringBuilderExample {
+	
 	public static void main(String[] args) {
 		String data = new StringBuilder()
 		.append("DEF")
@@ -12,4 +15,22 @@ public class StringBuilderExample {
 
 	}
 
+}
+class MyStringBuilder{
+	private List<Character> chList = new ArrayList<>();
+	
+	public MyStringBuilder append(String str) {
+		char[] chArr = str.toCharArray();
+		for(char ch: chArr) {
+			chList.add(ch);
+		}
+		return this;
+	}
+	public MyStringBuilder insert(int idx, String str) {
+		char[]chArr = str.toCharArray();
+		for(int i=idx; i<idx+str.length(); i++) {
+			chList.add(i, chArr[i]);
+		}
+		return this;
+	}
 }
