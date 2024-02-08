@@ -8,7 +8,10 @@ public class ExceptionHandlingExample2 {
 			System.out.println("문자 수 : " + result);
 		} catch(NullPointerException e) {
 			System.out.println(e.getMessage());
-		}finally {
+		}
+		
+		//	try가 실행되든 catch가 실행되든 마지막에 무조건 실행되는 영역
+		finally {
 			System.out.println("[마무리 실행]\n");
 		}
 		
