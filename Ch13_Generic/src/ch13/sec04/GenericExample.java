@@ -1,7 +1,7 @@
 package ch13.sec04;
 
 public class GenericExample {
-	
+	// Number거나 Number의 자식 객체만 T에 전달 가능
 	public static <T extends Number> boolean compare(T t1, T t2) {
 		System.out.println("compare(" + t1.getClass().getSimpleName() + ", " + t2.getClass().getSimpleName() + ")");
 		
