@@ -142,6 +142,18 @@ public class EmployeeManeger {
 		}
 	}
 	
+	private void delete() {
+		System.out.print("사번 입력 >> ");
+		String empNo = sc.next();
+		if(empMap.containsKey(empNo)) {
+			empMap.remove(empNo);
+			System.out.println("사원정보가 삭제되었습니다.");
+		}else {
+			System.out.println("존재하지 않는 사원입니다.");
+		}
+		
+	}
+	
 	public void run() {
 		boolean isRun = true;
 		
@@ -173,13 +185,13 @@ public class EmployeeManeger {
 				viewPartEmployeeInfo();
 				break;
 			case EmpMenu.SEARCH:
-				
+				search();
 				break;
 			case EmpMenu.UPDATE:
-				
+				update();
 				break;
 			case EmpMenu.DELETE:
-				
+				delete();
 				break;
 			case EmpMenu.EXIT:
 				emp = null;
