@@ -1,4 +1,4 @@
-package ch19.server.echoclient01;
+package ch19.server.echoserver01;
 
 import java.io.BufferedReader;
 import java.io.IOException;

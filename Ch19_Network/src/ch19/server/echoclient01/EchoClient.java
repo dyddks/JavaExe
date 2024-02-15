@@ -1,4 +1,4 @@
-package ch19.server.echoserver01;
+package ch19.server.echoclient01;
 
 import java.io.BufferedReader;
 import java.io.IOException;
@@ -29,6 +29,7 @@ public class EchoClient {
 			
 			String line;
 			while(true) {
+				System.out.println("입력 >> ");
 				line = keyboard.readLine();
 				if(line.equals("quit")) {
 					break;
