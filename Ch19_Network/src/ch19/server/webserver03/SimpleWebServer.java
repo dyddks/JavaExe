@@ -48,6 +48,7 @@ class HttpThread extends Thread{
 			PrintWriter pw = new PrintWriter(new OutputStreamWriter(out));
 			BufferedReader br = new BufferedReader(new InputStreamReader(in));
 			
+			// 브라우저가 요청한 파일 찾기
 			String line = br.readLine();
 			int start = line.indexOf(" ") + 2;
 			int end = line.lastIndexOf("HTTP") - 1;
@@ -56,6 +57,8 @@ class HttpThread extends Thread{
 				fileName = "index.html";
 			}
 			System.out.printf("<서버-%s>사용자가 %s를 요청했습니다.\n", getName(), fileName);
+			
+			// 파일 내용읽기
 			BufferedReader fileBr = new BufferedReader(new FileReader(fileName));
 			String fileLine;
 			while(true) {
