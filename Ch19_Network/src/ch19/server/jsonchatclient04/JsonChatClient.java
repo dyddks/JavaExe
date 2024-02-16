@@ -49,7 +49,7 @@ public class JsonChatClient {
 					sendAllChat(sc, pw, id);
 					break;
 				case ServiceMenu.ONE_CHAT:
-					
+					sendOneChat(sc, pw, id);
 					break;
 				case ServiceMenu.CALC_ARITH:
 					JsonChatClient.isPending = true;
@@ -72,6 +72,30 @@ public class JsonChatClient {
 			}
 			
 			sc.close();
+		}
+	}
+	
+	public static void sendOneChat(Scanner sc, PrintWriter pw, String id) {
+		System.out.println("상대방 id입력 >> ");
+		String youId = sc.nextLine();
+		boolean isRun = true;
+		
+		while(isRun) {
+			System.out.println("전송 메시지 (quit는 종료) >> ");
+			String msg = sc.nextLine();
+			if(msg.equals("quit")) {
+				isRun = false;
+				break;
+			}
+			JSONObject packetObj = new JSONObject();
+			packetObj.put("cmd", "ONECHAT");
+			packetObj.put("id", id);
+			packetObj.put("youId", youId);
+			packetObj.put("msg", msg);
+			
+			String packet = packetObj.toString();
+			pw.println(packet);
+			pw.flush();
 		}
 	}
 	
@@ -187,13 +211,20 @@ class ReceiveThread extends Thread{
 				System.out.println(ack);
 			}
 		}else if(cmd.equals("ONECHAT")) {	// 1대1 채팅 전송에 대한 서버 응답
-			
+			String ack = packetObj.getString("ack");
+			if(ack.equals("ok")) {
+				System.out.println("[서버응답] 1대1전송성공");
+			}else {
+				System.out.println(ack);
+			}
 		}else if(cmd.equals("BROADCHAT")) {	// 전체 채팅 수신
 			String id = packetObj.getString("id");
 			String msg = packetObj.getString("msg");
 			System.out.printf("[%s] %s\n", id, msg);
 		}else if(cmd.equals("UNICHAT")) { // 1대1 채팅 수신
-			
+			String id = packetObj.getString("id");
+			String msg = packetObj.getString("msg");
+			System.err.printf("[%s] %s\n", id, msg);
 		}
 	}
 }
