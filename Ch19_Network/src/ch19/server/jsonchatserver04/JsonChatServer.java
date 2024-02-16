@@ -191,7 +191,7 @@ class WorkerThread extends Thread{
 			pw.println(ack);
 			pw.flush();
 			
-			// 전체 전송
+			// 1대1 전송
 			JSONObject uniObj = new JSONObject();
 			uniObj.put("cmd", "UNICHAT");
 			uniObj.put("id", id);
