@@ -120,6 +120,7 @@ class WorkerThread extends Thread{
 				 * 문자열 -> JSONObject 변환 -> cmd를 해석해서 어떤 명령인지?
 				 * */
 				JSONObject packetObj = new JSONObject(line);
+				processPacket(packetObj);
 			}
 		}catch(Exception e) {
 			System.out.printf("<서버-%s>%s\n", getName(), e.getMessage());
